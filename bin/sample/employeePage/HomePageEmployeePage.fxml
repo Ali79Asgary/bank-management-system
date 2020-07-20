@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="534.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.employeePage.HomePageEmployeePageController">
+    <children>
+        <AnchorPane prefHeight="534.0" prefWidth="993.0" style="-fx-background-color: #424242; -fx-background-radius: 25; -fx-border-width: 5; -fx-border-color: #18ffff; -fx-border-radius: 25;">
+            <children>
+                <Label alignment="CENTER" layoutX="163.0" layoutY="173.0" prefHeight="188.0" prefWidth="667.0" style="-fx-border-color: #18ffff; -fx-border-radius: 25; -fx-border-width: 7;" text="کارمند محترم، به صفحه خودتان خوش آمدید!" textFill="#18ffff">
+                    <font>
+                        <Font name="System Bold" size="35.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

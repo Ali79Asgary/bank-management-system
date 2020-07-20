@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.employeePage.PersonalInfoEmployeePageController">
+    <children>
+        <AnchorPane prefHeight="534.0" prefWidth="993.0" style="-fx-background-color: #424242; -fx-background-radius: 25; -fx-border-color: #18ffff; -fx-border-width: 5; -fx-border-radius: 25;">
+            <children>
+                <Label alignment="CENTER" layoutX="100.0" layoutY="28.0" prefHeight="47.0" prefWidth="176.0" text="نام" textFill="#18ffff">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="100.0" layoutY="75.0" prefHeight="47.0" prefWidth="176.0" text="نام خانوادگی" textFill="#18ffff">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="100.0" layoutY="122.0" prefHeight="47.0" prefWidth="176.0" text="نام پدر" textFill="#18ffff">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="100.0" layoutY="169.0" prefHeight="47.0" prefWidth="176.0" text="شماره ملی" textFill="#18ffff">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="100.0" layoutY="216.0" prefHeight="47.0" prefWidth="176.0" text="شهر" textFill="#18ffff">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="511.0" layoutY="28.0" prefHeight="47.0" prefWidth="176.0" text="شماره پرسنلی" textFill="#18ffff">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="511.0" layoutY="75.0" prefHeight="47.0" prefWidth="176.0" text="رمز عبور" textFill="#18ffff">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="511.0" layoutY="122.0" prefHeight="47.0" prefWidth="176.0" text="وضعیت تاهل" textFill="#18ffff">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="511.0" layoutY="169.0" prefHeight="47.0" prefWidth="176.0" text="تعداد فرزندان" textFill="#18ffff">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="511.0" layoutY="216.0" prefHeight="47.0" prefWidth="176.0" text="سطح تحصیلات" textFill="#18ffff">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtFirstName" layoutX="276.0" layoutY="36.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtLastName" layoutX="276.0" layoutY="85.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtFatherName" layoutX="276.0" layoutY="132.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtNationalId" layoutX="276.0" layoutY="179.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtCity" editable="false" layoutX="276.0" layoutY="226.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtPersonnelId" editable="false" layoutX="687.0" layoutY="36.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="txtPassword" layoutX="687.0" layoutY="85.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                </PasswordField>
+                <TextField fx:id="txtMaritalStatus" editable="false" layoutX="687.0" layoutY="132.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtChildrenNumber" editable="false" layoutX="687.0" layoutY="179.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtDegreeOfEducation" editable="false" layoutX="687.0" layoutY="226.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+                    <font>
+                        <Font name="Arial Bold" size="15.0" />
+                    </font>
+                </TextField>
+                <Button alignment="CENTER" layoutX="393.0" layoutY="287.0" onAction="#updateInfo" prefHeight="55.0" prefWidth="232.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;" text="بروزرسانی اطلاعات">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            <Label alignment="CENTER" layoutX="511.0" layoutY="380.0" prefHeight="47.0" prefWidth="176.0" text="کل وام" textFill="#18ffff">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="511.0" layoutY="427.0" prefHeight="47.0" prefWidth="176.0" text="تعداد اقساط" textFill="#18ffff">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="totalDebt" editable="false" layoutX="687.0" layoutY="390.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="installmentCount" editable="false" layoutX="687.0" layoutY="437.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" layoutX="112.0" layoutY="380.0" prefHeight="47.0" prefWidth="176.0" text="بدهی باقی مانده" textFill="#18ffff">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="112.0" layoutY="427.0" prefHeight="47.0" prefWidth="176.0" text="قسط هر ماه" textFill="#18ffff">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="remainDebt" editable="false" layoutX="288.0" layoutY="390.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="monthInstallment" editable="false" layoutX="288.0" layoutY="437.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </TextField>
+            <Label fx:id="debt_info" layoutX="444.0" layoutY="484.0" prefHeight="30.0" prefWidth="431.0" textFill="#18ffff">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

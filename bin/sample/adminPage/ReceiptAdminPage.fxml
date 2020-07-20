@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="534.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.adminPage.ReceiptAdminPageController">
+   <children>
+      <AnchorPane prefHeight="534.0" prefWidth="993.0" style="-fx-background-color: #424242; -fx-background-radius: 25;">
+         <children>
+            <AnchorPane prefHeight="534.0" prefWidth="993.0" style="-fx-border-color: #18ffff; -fx-border-width: 7; -fx-background-radius: 25; -fx-border-radius: 25;">
+               <children>
+                  <TextField fx:id="txtReceiptDate" layoutX="699.0" layoutY="170.0" prefHeight="37.0" prefWidth="233.0" promptText="yyyy-mm-dd" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutX="482.0" layoutY="165.0" prefHeight="47.0" prefWidth="213.0" text="تاریخ صدور فیش حقوقی" textFill="#18ffff">
+                     <font>
+                        <Font name="Tahoma Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnPayslipActions" alignment="CENTER" layoutX="526.0" layoutY="257.0" onAction="#payslipAction" prefHeight="69.0" prefWidth="406.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;" text="صدور فیش حقوقی برای همه کارمندان">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtMinimumSalary" layoutX="83.0" layoutY="180.0" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutX="260.0" layoutY="170.0" prefHeight="47.0" prefWidth="176.0" text="حداقل حقوق سال :" textFill="#18ffff">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnChangeConstants" alignment="CENTER" layoutX="161.0" layoutY="268.0" onAction="#changeConstants" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #18ffff; -fx-background-radius: 25;" text="اعمال تغییرات">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseDragged="#handleScreenMovement" onMousePressed="#startScreenMovement" prefHeight="775.0" prefWidth="1272.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpPageController">
+   <children>
+      <ImageView fitHeight="775.0" fitWidth="1288.0" layoutX="-6.0" pickOnBounds="true">
+         <image>
+            <Image url="@sign-up-page.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="642.0" layoutY="78.0" prefHeight="675.0" prefWidth="618.0" style="-fx-background-color: #009688; -fx-background-radius: 30; -fx-border-color: #ffffff; -fx-border-radius: 20; -fx-border-width: 7;">
+         <children>
+            <Label alignment="CENTER" layoutX="106.0" layoutY="36.0" prefHeight="63.0" prefWidth="406.0" text="ایجاد حساب جدید" textFill="WHITE">
+               <font>
+                  <Font name="Arabic Typesetting" size="55.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSignUp" layoutX="233.0" layoutY="561.0" onAction="#signUp" prefHeight="56.0" prefWidth="153.0" style="-fx-background-color: #009688; -fx-background-radius: 50; -fx-border-color: #ffffff; -fx-border-radius: 150; -fx-border-width: 4;" text="ثبت نام" textFill="WHITE">
+               <font>
+                  <Font name="Arabic Typesetting" size="35.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtFirstName" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="405.0" layoutY="197.0" prefHeight="27.0" prefWidth="188.0" promptText="نام">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></TextField>
+            <TextField fx:id="txtLastName" alignment="CENTER_RIGHT" layoutX="216.0" layoutY="197.0" prefHeight="37.0" prefWidth="188.0" promptText="نام خانوادگی">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></TextField>
+            <TextField fx:id="txtFatherName" alignment="CENTER_RIGHT" layoutX="26.0" layoutY="197.0" prefHeight="37.0" prefWidth="188.0" promptText="نام پدر">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></TextField>
+            <TextField fx:id="txtNationalId" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="405.0" layoutY="279.0" prefHeight="37.0" prefWidth="188.0" promptText="کد ملی">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPhoneNumber" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="216.0" layoutY="279.0" prefHeight="37.0" prefWidth="188.0" promptText="تلفن همراه">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dateBirthday" alignment="CENTER_RIGHT" layoutX="26.0" layoutY="279.0" prefHeight="37.0" prefWidth="188.0" promptText="تاریخ تولد">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font></TextField>
+            <ComboBox fx:id="comboMaritalStatus" layoutX="215.0" layoutY="351.0" prefHeight="37.0" prefWidth="188.0" promptText="وضعیت تاهل" visibleRowCount="4" />
+            <TextField fx:id="txtChildrenNumber" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="405.0" layoutY="351.0" prefHeight="37.0" prefWidth="188.0" promptText="تعداد فرزندان">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="19.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="comboGender" layoutX="26.0" layoutY="351.0" prefHeight="37.0" prefWidth="188.0" promptText="جنسیت" visibleRowCount="4" />
+            <ComboBox fx:id="comboDegreeOfEducation" layoutX="26.0" layoutY="420.0" prefHeight="37.0" prefWidth="188.0" promptText="سطح تحصیلات" visibleRowCount="4" />
+            <ComboBox fx:id="comboStateOfWorkplace" layoutX="215.0" layoutY="420.0" onAction="#loadCities" prefHeight="37.0" prefWidth="188.0" promptText="استان محل خدمت" visibleRowCount="4" />
+            <ComboBox fx:id="comboCityOfWorkplace" layoutX="405.0" layoutY="420.0" prefHeight="37.0" prefWidth="188.0" promptText="شهر محل خدمت" visibleRowCount="4" />
+            <AnchorPane layoutX="167.0" layoutY="111.0" prefHeight="61.0" prefWidth="284.0" style="-fx-background-color: #ffffff00; -fx-background-radius: 50; -fx-border-color: #ffffff; -fx-border-radius: 150; -fx-border-width: 4;">
+               <children>
+               </children>
+            </AnchorPane>
+            <PasswordField fx:id="txtPassword" alignment="CENTER_RIGHT" layoutX="92.0" layoutY="494.0" prefHeight="37.0" prefWidth="188.0" promptText="رمز عبور">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="txtConfirmPassword" alignment="CENTER_RIGHT" layoutX="337.0" layoutY="494.0" prefHeight="37.0" prefWidth="188.0" promptText="تایید رمز عبور">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="20.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="lblWrongInfo" alignment="CENTER" layoutX="52.0" layoutY="633.0" prefHeight="21.0" prefWidth="515.0" textFill="RED">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="358.0" layoutY="78.0" prefHeight="675.0" prefWidth="284.0" style="-fx-background-color: #ffffff; -fx-border-color: #009688; -fx-background-radius: 30; -fx-border-radius: 25; -fx-border-width: 7;">
+         <children>
+            <Circle fill="#e81e6500" layoutX="123.0" layoutY="80.0" radius="58.0" stroke="#009688" strokeType="INSIDE" strokeWidth="7.0" />
+            <Circle fill="#ffffff00" layoutX="181.0" layoutY="99.0" radius="39.0" stroke="#009688" strokeType="INSIDE" strokeWidth="7.0" />
+            <Label alignment="CENTER" layoutX="7.0" layoutY="318.0" prefHeight="40.0" prefWidth="265.0" text="برای ارتباط بیشتر با ما" textFill="#009688" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="182.0" prefHeight="58.0" prefWidth="256.0" text="بزن بریم!!" textFill="#009688">
+               <font>
+                  <Font name="Arial" size="60.0" />
+               </font>
+            </Label>
+            <Line endX="-51.0" layoutX="217.0" layoutY="266.0" startX="-100.0" stroke="#009688" strokeWidth="5.0" />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="358.0" prefHeight="40.0" prefWidth="214.0" text="لطفا با اطلاعات خود" textFill="#009688">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="35.0" layoutY="398.0" prefHeight="40.0" prefWidth="214.0" text="وارد شوید." textFill="#009688">
+               <font>
+                  <Font name="Algerian" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSignIn" layoutX="65.0" layoutY="490.0" onAction="#gotoLoginPage" prefHeight="56.0" prefWidth="153.0" style="-fx-background-color: #ffffff; -fx-background-radius: 50; -fx-border-color: #009688; -fx-border-radius: 150; -fx-border-width: 4;" text="ورود" textFill="#009688">
+               <font>
+                  <Font name="Arabic Typesetting" size="35.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <AnchorPane layoutX="-8.0" prefHeight="50.0" prefWidth="1281.0" style="-fx-background-color: #ffffff00; -fx-border-color: #009688; -fx-border-width: 4;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="509.0" layoutY="11.0" prefHeight="34.0" prefWidth="265.0" text="صفحه ثبت نام" textFill="#009688">
+               <font>
+                  <Font name="Algerian" size="30.0" />
+               </font>
+            </Label>
+            <Circle fx:id="close" fill="#009688" layoutX="1243.0" layoutY="28.0" onMouseClicked="#onClose" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="mini" fill="#009688" layoutX="1195.0" layoutY="28.0" onMouseClicked="#mini" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

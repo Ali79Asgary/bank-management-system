@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="534.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.employeePage.SalaryReceiptEmployeePageController">
+    <children>
+        <AnchorPane prefHeight="534.0" prefWidth="993.0" style="-fx-background-color: #424242; -fx-background-radius: 25;">
+         <children>
+            <AnchorPane layoutY="-1.0" prefHeight="534.0" prefWidth="993.0" style="-fx-border-color: #18ffff; -fx-border-width: 7; -fx-background-radius: 25; -fx-border-radius: 25;">
+               <children>
+                  <TableView fx:id="table" layoutX="17.0" layoutY="16.0" prefHeight="503.0" prefWidth="964.0">
+                    <columns>
+                      <TableColumn fx:id="col_actionId" editable="false" prefWidth="34.0" style="-fx-font-size: 8px;" text="شماره" />
+                      <TableColumn fx:id="col_jobAllowance" editable="false" prefWidth="56.0" style="-fx-font-size: 8px;" text="حق شغل" />
+                        <TableColumn fx:id="col_employeeAllowance" editable="false" prefWidth="68.0" style="-fx-font-size: 8px;" text="حق شاغل" />
+                        <TableColumn fx:id="col_familyHelp" editable="false" prefWidth="71.0" style="-fx-font-size: 8px;" text="حق عایله مندی" />
+                        <TableColumn fx:id="col_childrenHelp" editable="false" minWidth="0.0" prefWidth="79.0" style="-fx-font-size: 8px;" text="کمک هزینه اولاد" />
+                        <TableColumn fx:id="col_notDevelopedRegionAllowance" editable="false" minWidth="0.0" prefWidth="155.0" style="-fx-font-size: 8px;" text="فوق العاده منطقه کمتر توسعه یافته" />
+                        <TableColumn fx:id="col_badWeatherRegionAllowance" editable="false" minWidth="0.0" prefWidth="107.0" style="-fx-font-size: 8px;" text="فوق العاده بدی آب و هوا" />
+                        <TableColumn fx:id="col_jobDifficultnessAllowance" editable="false" minWidth="0.0" prefWidth="94.0" style="-fx-font-size: 8px;" text="فوق العاده سختی کار" />
+                        <TableColumn fx:id="col_jobSpecial" editable="false" minWidth="0.0" prefWidth="86.0" style="-fx-font-size: 8px;" text="فوق العاده شغل" />
+                        <TableColumn fx:id="col_salary" editable="false" minWidth="0.0" prefWidth="50.0" style="-fx-font-size: 8px;" text="جمع" />
+                        <TableColumn fx:id="col_issueDate" editable="false" minWidth="0.0" prefWidth="40.0" style="-fx-font-size: 8px;" text="تاریخ" />
+                        <TableColumn fx:id="col_jobClass" editable="false" minWidth="0.0" prefWidth="57.0" style="-fx-font-size: 8px;" text="طبقه شغلی" />
+                        <TableColumn fx:id="col_jobRank" editable="false" minWidth="4.0" prefWidth="65.0" style="-fx-font-size: 8px;" text="رتبه شغلی" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children></AnchorPane>
+         </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
